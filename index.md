@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 什么是mint
-      link: /markdown-examples
+      link: /pages/sketch
     - theme: alt
       text: 快速开始
-      link: /api-examples
+      link: /pages/quick-start
 
 features:
   - title: 前沿技术栈
