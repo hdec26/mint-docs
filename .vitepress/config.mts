@@ -13,7 +13,7 @@ export default defineConfig({
         rel: "icon",
         type: 'image/png', 
         sizes: '32x32',
-        href: "/public/icon.ico",
+        href: "/icon.ico",
       },
     ],
   ],
@@ -74,6 +74,6 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/hdec26/mint' }
     ],
-    logo: '/public/leaf.png',
+    logo: '/leaf.png',
   }
 })
