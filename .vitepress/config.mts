@@ -1,35 +1,46 @@
 import { defineConfig } from 'vitepress'
-import { fileURLToPath, URL } from 'node:url'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Mint",
   base:'/mint-docs/',
-  description: "A VitePress Site",
+  lang:'zh-cn',
+  description: "简易，高效，实用的前端开发脚手架",
   head: [
-    // 其他head配置...
     [
       "link",
       {
         rel: "icon",
-        href: "/img/leaf.png",
+        type: 'image/png', 
+        sizes: '32x32',
+        href: "../img/icon.ico",
       },
     ],
   ],
-  vite: {
-    resolve: {
-      alias: {
-        '@': fileURLToPath(new URL('../../src', import.meta.url))
-      }
-    }
-  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '首页', link: '/index' },
-      { text: '常见问题', link: '/pages/common-problem.md' }
+      { text: '首页', link: '/' },
+      { text: '常见问题', link: '/pages/common-problem.md' },
+      { text: '更新日志', link: '/pages/update-log.md' }, {
+        text:'v1.0.0',
+        link:'/'
+      }
     ],
-
+    search:{
+      provider:'local'
+    },
+    outline:{
+      label:'页面导航',
+    },
+    footer: {
+      message: 'MIT Licensed',
+      copyright: 'Copyright © 2024-present hdec'
+    },
+    docFooter:{
+      prev:'上一页',
+      next:'下一页'
+    },
     sidebar: [
       {
         items: [
@@ -40,16 +51,16 @@ export default defineConfig({
       {
         text: '创作',
         items: [
-          { text: '主题', link: '/markdown-examples' },
+          { text: '主题', link: '/pages/layout.md' },
           { text: '环境变量', link: '/pages/env.md' }
         ]
       },
       {
         text: 'API',
         items: [
-          { text: 'mint配置', link: '/markdown-examples' },
+          { text: 'Mint配置', link: '/pages/config.md' },
           { text: 'global', link: '/pages/global.md' },
-          { text: '路由', link: '/api-examples' },
+          { text: '路由', link: '/pages/router.md' },
         ]
       },
       {
@@ -58,8 +69,8 @@ export default defineConfig({
           { text: '更新日志', link: '/pages/update-log.md' },
         ]
       },
+     
     ],
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/hdec26/mint' }
     ],
