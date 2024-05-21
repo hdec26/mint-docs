@@ -13,7 +13,7 @@ export default defineConfig({
         rel: "icon",
         type: 'image/png', 
         sizes: '32x32',
-        href: "/icon.ico",
+        href: "./icon.ico",
       },
     ],
   ],
