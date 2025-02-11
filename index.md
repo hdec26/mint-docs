@@ -3,12 +3,12 @@
 layout: home
 
 hero:
-  name: "Mint"
+  name: "dec"
   text: ""
   tagline: 简易，高效，实用的前端开发脚手架
   actions:
     - theme: brand
-      text: 什么是mint
+      text: 什么是dec
       link: /pages/sketch
     - theme: alt
       text: 快速开始
@@ -28,4 +28,3 @@ features:
   - title: 功能扩展
     details: 本系统允许用户灵活自定义项目架构配置，轻松实现如Alias路径别名设置、本地开发代理（Proxy）配置等扩展与修改。
 ---
-
